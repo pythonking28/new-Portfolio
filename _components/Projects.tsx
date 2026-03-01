@@ -210,7 +210,6 @@ const filters = [
 type Filter = (typeof filters)[number];
 
 // ── Comic Speech Bubble — fixed to viewport so it's never clipped ─────────────
-
 const SpeechBubble = ({
   project,
   visible,
@@ -226,10 +225,13 @@ const SpeechBubble = ({
   const OFFSET_Y = 250; // gap below the tail tip
 
   // Clamp so it doesn't overflow viewport edges
-  const left = Math.min(
-    Math.max(x - BUBBLE_W / 2, 12),
-    window.innerWidth - BUBBLE_W - 12,
-  );
+const left =
+  typeof window !== "undefined"
+    ? Math.min(
+        Math.max(x - BUBBLE_W / 2, 12),
+        window.innerWidth - BUBBLE_W - 12,
+      )
+    : 0;
   const top = y - OFFSET_Y; // tail tip sits at cursor y, bubble goes up
 
   return (

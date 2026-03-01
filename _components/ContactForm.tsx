@@ -287,7 +287,7 @@ const ContactForm = ({
             </span>
           }
           styles={{
-            content: {
+            body: {
               padding: 0,
               background: "#080e1c",
               border: "1px solid #1e293b",
@@ -296,10 +296,9 @@ const ContactForm = ({
               boxShadow:
                 "0 25px 60px -10px rgba(249,115,22,0.15), 0 0 0 1px rgba(249,115,22,0.08)",
             },
-            mask: {
-              backdropFilter: "blur(6px)",
-              background: "rgba(2,6,18,0.75)",
-            },
+          }}
+          style={{
+            backdropFilter: "blur(6px)",
           }}
         >
           {/* ── Modal inner layout ── */}
