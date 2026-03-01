@@ -424,10 +424,14 @@ const ContactForm = ({
                           }
                         >
                           <Select placeholder="Select a range">
-                            <Option value="<5k">Under $5,000</Option>
-                            <Option value="5k-15k">$5,000 – $15,000</Option>
-                            <Option value="15k-50k">$15,000 – $50,000</Option>
-                            <Option value="50k+">$50,000+</Option>
+                            <Option value="<5k">Under NPR. 5,000</Option>
+                            <Option value="5k-15k">
+                              NPR. 5,000 – NPR. 15,000
+                            </Option>
+                            <Option value="15k-50k">
+                              NPR. 15,000 – NPR. 50,000
+                            </Option>
+                            <Option value="50k+">NPR. 50,000+</Option>
                             <Option value="open">Let's discuss</Option>
                           </Select>
                         </Form.Item>

@@ -423,12 +423,12 @@ const About = ({ setOpen }: { setOpen: (open: boolean) => void }) => {
                   my inbox is always open.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-3 shrink-0">
+              <div className="flex flex-wrap gap-3 shrink-0" id="contact">
                 <motion.a
-                //   href="mailto:hello@johndoe.dev"
+                  //   href="mailto:hello@johndoe.dev"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-7 py-3.5 rounded-xl font-semibold text-white bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 transition-all text-sm"
+                  className="px-7 py-3.5 rounded-xl font-semibold text-white bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 transition-all text-sm cursor-pointer"
                   onClick={() => setOpen(true)}
                 >
                   Contact Me →
