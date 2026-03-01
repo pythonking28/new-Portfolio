@@ -434,6 +434,7 @@ const About = ({ setOpen }: { setOpen: (open: boolean) => void }) => {
                   Contact Me →
                 </motion.a>
                 <motion.a
+                  download
                   href="/resume.pdf"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
